@@ -17,8 +17,7 @@ struct ContentView: View {
                     Text("Home")
                 }
             
-            Text("Reels")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
+            ReelsView()
                 .tabItem {
                     Image(systemName: "video.circle.fill")
                     Text("Reels")
