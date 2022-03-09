@@ -7,33 +7,39 @@
 
 import SwiftUI
 
+enum TabItems: Int {
+    case home, search, reels, favorites, profile
+}
+
 struct ContentView: View {
+    @State private var selectedTab = TabItems.reels.rawValue
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                }.tag(0)
+                }.tag(TabItems.home.rawValue)
             
             SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-                }.tag(1)
+                }.tag(TabItems.search.rawValue)
             
             ReelsView()
                 .tabItem {
                     Image(systemName: "video.circle")
-                }.tag(2)
+                }.tag(TabItems.reels.rawValue)
             
             FavoritesView()
                 .tabItem {
                     Image(systemName: "heart")
-                }.tag(3)
+                }.tag(TabItems.favorites.rawValue)
             
             ProfileView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
-                }.tag(4)
+                }.tag(TabItems.profile.rawValue)
             
         }
         .accentColor(.white)
