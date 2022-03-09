@@ -12,6 +12,10 @@
 		B740C3BB27D0B8DD00E79FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B740C3BA27D0B8DD00E79FFF /* Assets.xcassets */; };
 		B740C3BE27D0B8DD00E79FFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B740C3BD27D0B8DD00E79FFF /* Preview Assets.xcassets */; };
 		B740C3C527D0BD8C00E79FFF /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740C3C427D0BD8C00E79FFF /* ReelsView.swift */; };
+		B782C9EE27D8995600839EEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782C9ED27D8995600839EEE /* HomeView.swift */; };
+		B782C9F027D8996400839EEE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782C9EF27D8996400839EEE /* SearchView.swift */; };
+		B782C9F227D8996D00839EEE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782C9F127D8996D00839EEE /* ProfileView.swift */; };
+		B782C9F427D899B300839EEE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782C9F327D899B300839EEE /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		B740C3BA27D0B8DD00E79FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B740C3BD27D0B8DD00E79FFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B740C3C427D0BD8C00E79FFF /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		B782C9ED27D8995600839EEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B782C9EF27D8996400839EEE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B782C9F127D8996D00839EEE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B782C9F327D899B300839EEE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 				B740C3B627D0B8DC00E79FFF /* InstagramApp.swift */,
 				B740C3B827D0B8DC00E79FFF /* ContentView.swift */,
 				B740C3C427D0BD8C00E79FFF /* ReelsView.swift */,
+				B782C9ED27D8995600839EEE /* HomeView.swift */,
+				B782C9EF27D8996400839EEE /* SearchView.swift */,
+				B782C9F127D8996D00839EEE /* ProfileView.swift */,
+				B782C9F327D899B300839EEE /* FavoritesView.swift */,
 				B740C3BA27D0B8DD00E79FFF /* Assets.xcassets */,
 				B740C3BC27D0B8DD00E79FFF /* Preview Content */,
 			);
@@ -140,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B782C9F027D8996400839EEE /* SearchView.swift in Sources */,
 				B740C3B927D0B8DC00E79FFF /* ContentView.swift in Sources */,
+				B782C9EE27D8995600839EEE /* HomeView.swift in Sources */,
 				B740C3C527D0BD8C00E79FFF /* ReelsView.swift in Sources */,
+				B782C9F427D899B300839EEE /* FavoritesView.swift in Sources */,
+				B782C9F227D8996D00839EEE /* ProfileView.swift in Sources */,
 				B740C3B727D0B8DC00E79FFF /* InstagramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

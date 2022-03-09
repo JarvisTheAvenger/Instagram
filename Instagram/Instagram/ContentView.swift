@@ -10,22 +10,38 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Home")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
+            HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                    Text("Home")
-                }
+                }.tag(0)
+            
+            SearchView()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                }.tag(1)
             
             ReelsView()
                 .tabItem {
-                    Image(systemName: "video.circle.fill")
-                    Text("Reels")
-                }
+                    Image(systemName: "video.circle")
+                }.tag(2)
+            
+            FavoritesView()
+                .tabItem {
+                    Image(systemName: "heart")
+                }.tag(3)
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                }.tag(4)
+            
         }
-        .accentColor(.red)
+        .accentColor(.white)
         .onAppear() {
+            UITabBar.appearance().isTranslucent = false
             UITabBar.appearance().barTintColor = .white
+            UITabBar.appearance().backgroundColor = .black
+
         }
     }
 }
