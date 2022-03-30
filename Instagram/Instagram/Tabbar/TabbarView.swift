@@ -53,6 +53,8 @@ struct TabbarView: View {
         }
         .padding(.horizontal)
         .padding(.vertical, 10)
+        .overlay(Divider(), alignment: .top)
+        .background(currentTab == "Reels" ? .black : .clear)
     }
 }
 
